@@ -18,6 +18,5 @@ full_command = "nohup " + \
                f"-t '{time}' " + \
                f"> {path_pwd}/log.logs 2>&1 &"
                 
-subprocess.Popen(time, shell=True)
 subprocess.Popen(full_command, shell=True)
 
