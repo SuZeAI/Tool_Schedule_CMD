@@ -1,7 +1,3 @@
-# How To Run
-```bash
-    bash path/to/run.bash -c "..." -t "..."
-```
 # Input
 ```bash
     -c: command
@@ -12,3 +8,14 @@
     file log.logs # log.logs located in pwd
 ```
 
+# Case 1
+-  How to run onefile
+```bash
+    bash path/to/run.bash -c "..." -t "..."
+```
+
+# Case 2
+-  How To Run With code Python
+```bash
+    bash path/to/runwithpython.bash -c "..." -t "..."
+```
