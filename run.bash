@@ -20,9 +20,13 @@ fi
 
 (
     sleep $time
+    start=$(date +%s.%N)
     echo "_____________________________Run: $command"
     echo "start time: $time"
     echo "running......."
     $command
+    end=$(date +%s.%N)
+    runtime=$(echo "$end - $start" | bc)
+    echo "During: $runtime s"
     echo "Done!!!!!!!__________________"
 )</dev/null 2>&1 1> $SCRIPT_PATH_PWD/log.logs &
